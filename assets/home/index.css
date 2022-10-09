@@ -1,11 +1,11 @@
 :root {
-    /* Cores de ação */
+    /* action colors */
 
-    --parado: #0B0D17;
-    --mouse-por-cima: #D0D6F9;
-    --ativo: #ffffff;
+    --Idle: #0B0D17;
+    --Hover: #D0D6F9;
+    --active: #ffffff;
 
-    /* Fontes */
+    /* Fonts */
 
     --Barlow-Condensed: 'Barlow Condensed', sans-serif;
     --Barlow: 'Barlow', sans-serif;

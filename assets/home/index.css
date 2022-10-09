@@ -1,0 +1,17 @@
+:root {
+    /* Cores de ação */
+
+    --parado: #0B0D17;
+    --mouse-por-cima: #D0D6F9;
+    --ativo: #ffffff;
+
+    /* Fontes */
+
+    --Barlow-Condensed: 'Barlow Condensed', sans-serif;
+    --Barlow: 'Barlow', sans-serif;
+    --Bellefair: 'Bellefair', serif;
+}
+
+body {
+    background-image: url('./background-home-desktop.jpg');
+}

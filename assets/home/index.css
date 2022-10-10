@@ -158,3 +158,42 @@ button {
         left: 130px;        
     }
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-family: var(--Barlow-Condensed);
+        background-image: url(./background-home-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .line {
+        border: none;
+    }
+
+    strong {
+        display: none;
+    }
+
+    .intro ul {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 48px;
+    }
+
+    main {
+        width: 768px;
+    }
+
+    .info-intro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 106px auto;
+        align-items: center;
+    }
+
+    button {
+        width: 242px;
+        height: 242px;        
+    }
+}

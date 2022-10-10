@@ -19,26 +19,29 @@
 }
 
 body {
-    background-image: url('./background-home-desktop.jpg');
-}
-
-.intro {
     font-family: var(--Barlow-Condensed);
+    background-image: url('./background-home-desktop.jpg');
+    background-repeat: no-repeat;
 }
 
 .intro-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
 }
 
-.intro img {
+.intro h1 a img {
     margin-left: 55px;
+}
+
+.intro h1 a:hover {
+    border: none;
 }
 
 .line {
     position: absolute;
-    left: 210px;
+    left: 128px;
     top: 5px;
     width: 473px;
     height: 1px;
@@ -55,7 +58,7 @@ nav {
 .intro ul {
     display: flex;   
     align-items: center;
-    margin: 0 165px 0 123px;
+    margin: 0 117px 0 123px;
 }
 
 .intro li {
@@ -63,7 +66,8 @@ nav {
     padding: 37px 0;
     margin-right: 48px;  
     list-style: none;  
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    letter-spacing: 2.7px;  
 }
 
 .intro a {
@@ -73,7 +77,8 @@ nav {
 }
 
 .intro a:hover {
-    border-bottom: 3px solid var(--Text-main);
+    color: var(--Hover);
+    border-bottom: 3px solid var(--Hover);
 }
 
 strong {
@@ -81,8 +86,75 @@ strong {
     margin-right: 12px;
 }
 
+.info-intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 275px 53px 0 133px;
+    align-items: flex-start;
+    top: 387px;
+    color: var(--Hover);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 33.6px;
+    letter-spacing: 4.72px;
+}
+
+h3 {
+    font-family: var(--Bellefair);
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 171.9px;
+    color: var(--active);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: var(--Barlow);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+button {
+    width: 274px;
+    height: 274px;
+    border-radius: 138px;
+    font-family: var(--Bellefair);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--Idle);
+    background-color: var(--active);
+    text-transform: uppercase;     
+}
+
+.hover-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 223px;
+}
+
+.hover-button:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px); 
+}
+
 @media screen and (max-width: 1366px) {
+
+    .info-intro {
+        margin: 275px 3px 0 130px;
+        align-items: flex-start;
+    }
+
     .line {
+        width: 415px;
         left: 130px;        
     }
 }

@@ -5,6 +5,12 @@
     --Hover: #D0D6F9;
     --active: #ffffff;
 
+    /* text colors */
+
+    --Text-main: #ffffff;
+    --Idle: #0B0D17;
+    --Hover: #D0D6F9;
+
     /* Fonts */
 
     --Barlow-Condensed: 'Barlow Condensed', sans-serif;
@@ -14,4 +20,69 @@
 
 body {
     background-image: url('./background-home-desktop.jpg');
+}
+
+.intro {
+    font-family: var(--Barlow-Condensed);
+}
+
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.intro img {
+    margin-left: 55px;
+}
+
+.line {
+    position: absolute;
+    left: 210px;
+    top: 5px;
+    width: 473px;
+    height: 1px;
+    margin-top: 80px;
+    border-bottom: 1px solid var(--Text-main);
+    z-index: 1;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px); 
+}
+
+.intro ul {
+    display: flex;   
+    align-items: center;
+    margin: 0 165px 0 123px;
+}
+
+.intro li {
+    height: 22px;
+    padding: 37px 0;
+    margin-right: 48px;  
+    list-style: none;  
+    text-transform: uppercase;    
+}
+
+.intro a {
+    padding-bottom: 37px;    
+    text-decoration: none;
+    color: var(--Text-main);
+}
+
+.intro a:hover {
+    border-bottom: 3px solid var(--Text-main);
+}
+
+strong {
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 1366px) {
+    .line {
+        left: 130px;        
+    }
 }

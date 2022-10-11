@@ -24,6 +24,8 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
 .intro h1 a img {
     margin-left: 15px;
 }
@@ -168,8 +170,16 @@ button {
         background-image: url(./background-home-tablet.jpg);
     }
 
+    .intro h1 a img {
+        margin-left: 39px;
+    }
+
     .line {
         border: none;
+    }
+
+    .intro-box {
+        margin-top: 0;
     }
 
     strong {

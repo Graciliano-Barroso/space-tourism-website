@@ -83,12 +83,17 @@ body {
     color: var(--Text-main);
 }
 
+.button-destination {
+    color: var(--Hover);
+    border-bottom: 3px solid var(--Hover);
+}
+
 .intro a:hover {
     color: var(--Hover);
     border-bottom: 3px solid var(--Hover);
 }
 
-.container-moon strong {
+.container-destination strong {
     font-weight: 700;
     line-height: 36.6px;    
     margin-right: 28px;
@@ -104,12 +109,12 @@ h2 {
     text-transform: uppercase;    
 }
 
-.container-moon img {
+.container-destination img {
     margin-top: 97px;
     margin-left: 60px;
 }
 
-.container-moon {
+.container-destination {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 157px;
@@ -122,19 +127,24 @@ h2 {
     align-items: flex-end;
 }
 
-.container-moon ul {
+.container-destination ul {
     display: flex;
     color: var(--Hover);
 }
 
-.container-moon li {  
+.container-destination li {  
     margin-right: 36px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2.7px;
 }
 
-.container-moon a:hover {
+.link-moon {
+    padding-bottom: 12px; 
+    border-bottom: 3px solid var(--active);
+}
+
+.container-destination a:hover {
     padding-bottom: 12px;        
     border-bottom: 3px solid var(--Hover);
 }
@@ -198,5 +208,93 @@ h3 {
     .line {
         width: 445px;
         left: 130px;        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(./background-destination-tablet.jpg);
+    }
+
+    .line {
+        border: none;
+    }
+
+    .intro h1 a img {
+        margin-left: 39px;
+    }
+
+    .intro-box {
+        margin-top: 0;
+    }
+
+    strong {
+        display: none;
+    }
+
+    .intro ul {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 48px;
+    }
+
+    main {
+        width: 768px;
+    }
+
+    .container-destination strong {
+        display: inline;
+    }
+
+    h2 {
+        position: absolute;
+        left: 38.5px;
+        font-size: 20px;
+    }
+
+    .container-destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 0;
+        margin-top: 40px;
+        margin-left: 38.5px;
+    }
+
+    .container-destination img {
+        width: 300px;
+        margin-top: 60px;
+        margin-bottom: 53px;
+        margin-left: 0;
+    }
+
+    .container-destination ul {
+        justify-content: center;
+    }
+
+    .container-destination li {
+        margin: 0 18px;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 80px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .content {
+        font-size: 16px;
+        width: 563px;
+        text-align: center;
+        padding-bottom: 44px;
+    }
+
+    .distance-time {
+        justify-content: space-around;
     }
 }

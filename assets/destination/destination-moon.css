@@ -139,7 +139,7 @@ h2 {
     letter-spacing: 2.7px;
 }
 
-.link-moon {
+.link-active {
     padding-bottom: 12px; 
     border-bottom: 3px solid var(--active);
 }

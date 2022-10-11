@@ -1,0 +1,110 @@
+:root {
+    /* action colors */
+
+    --Idle: #0B0D17;
+    --Hover: #D0D6F9;
+    --active: #ffffff;
+
+    /* text colors */
+
+    --Text-main: #ffffff;
+    --Idle: #0B0D17;
+    --Hover: #D0D6F9;
+
+    /* Fonts */
+
+    --Barlow-Condensed: 'Barlow Condensed', sans-serif;
+    --Barlow: 'Barlow', sans-serif;
+    --Bellefair: 'Bellefair', serif;
+}
+
+body {
+    font-family: var(--Barlow-Condensed);
+    background-image: url('./background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+}
+
+.intro h1 a img {
+    margin-left: 15px;
+}
+
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.intro h1 a img {
+    margin-left: 55px;
+}
+
+.intro h1 a:hover {
+    border: none;
+}
+
+.line {
+    position: absolute;
+    left: 190px;
+    top: 5px;
+    width: 473px;
+    height: 1px;
+    margin-top: 80px;
+    border-bottom: 1px solid var(--Text-main);
+    z-index: 1;
+}
+
+.intro nav {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px); 
+}
+
+.intro ul {
+    display: flex;   
+    align-items: center;
+    margin: 0 117px 0 123px;
+}
+
+.intro li {
+    height: 22px;
+    padding: 37px 0;
+    margin-right: 48px;  
+    list-style: none;  
+    text-transform: uppercase;  
+    letter-spacing: 2.7px;  
+}
+
+.intro a {
+    padding-bottom: 37px;    
+    text-decoration: none;
+    color: var(--Text-main);
+}
+
+.intro a:hover {
+    color: var(--Hover);
+    border-bottom: 3px solid var(--Hover);
+}
+
+.container-moon strong {
+    font-weight: 700;
+    line-height: 36.6px;    
+    margin-right: 28px;
+    margin-right: 12px;
+    opacity: 25%;
+}
+
+h2 {
+    color: var(--Text-main);
+    font-size: 28px;
+    line-height: 36.6px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+}
+
+.container-moon {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 76px;
+    margin-left: 166.5px;
+}

@@ -24,6 +24,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.intro h1 a img {
+    margin-left: 15px;
+}
+
 .intro-box {
     display: flex;
     justify-content: space-between;
@@ -50,9 +54,9 @@ body {
     z-index: 1;
 }
 
-nav {
+.intro nav {
     background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(12px); 
+    backdrop-filter: blur(24px); 
 }
 
 .intro ul {
@@ -161,9 +165,7 @@ button {
 
 @media screen and (max-width: 768px) {
     body {
-        font-family: var(--Barlow-Condensed);
         background-image: url(./background-home-tablet.jpg);
-        background-repeat: no-repeat;
     }
 
     .line {
@@ -196,4 +198,144 @@ button {
         width: 242px;
         height: 242px;        
     }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(./background-home-mobile.jpg);
+    }    
+    
+    .intro-box {
+        margin-top: 24px;
+    }
+
+    .intro h1 a img {
+        margin-left: 15px;
+        width: 40px;
+    }
+
+    .line {
+        border: none;
+    }
+
+    #toggle {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        background-color: var(--Very-Light-Gray);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        z-index: 1;
+        margin-right: 15px;
+    }    
+
+    #toggle::before {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: var(--active);
+        transition: 0.5s;
+        transform: translatey(-8px);
+        box-shadow: 0 8px 0 var(--active);
+    }
+
+    #toggle.active::before {
+        transform: translatey(0px) rotate(45deg);
+        box-shadow: 0 0 0 var(--active);
+    }
+
+    #toggle::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background: var(--active);
+        transition: 0.5s;
+        transform: translatey(8px);
+    }
+
+    #toggle.active::after {
+        transform: translatey(0px) rotate(-45deg);
+    }
+
+    strong {
+        display: inline;
+        margin-right: 11px;
+    }
+
+    .menu-lateral {               
+        position: absolute;
+        top: 0;
+        right: -254px;
+        width: 254px;
+        transition: 1s;
+    }
+
+    .menu-lateral-ativo {
+        right: 0;
+        transition: 1s;
+    }
+
+    .intro ul {
+        margin-top: 118px;
+        margin-bottom: 334px;
+        flex-direction: column;
+    }
+
+    .intro li {
+        padding: 16px 0;
+        align-self: flex-start;
+    }
+
+    .intro a {
+        padding-bottom: 0;
+    }
+
+    main {
+        width: 375px;
+    }
+
+    .info-intro {
+        margin: 48px 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    br {
+        display: none;
+    }
+
+    h4 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    button {
+        width: 150px;
+        height: 150px;        
+        font-size: 20px;
+        letter-spacing: 1.25px;
+    }
+
+    .hover-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        margin-top: 81px;
+    }
+
 }

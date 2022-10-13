@@ -25,6 +25,8 @@ body {
     font-family: var(--Barlow-Condensed);
     background-image: url('./background-destination-desktop.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
 }
 
 .intro h1 a img {

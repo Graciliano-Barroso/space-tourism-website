@@ -15,10 +15,16 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: var(--Barlow-Condensed);
     color: var(--active);
     background-image: url('./background-crew-desktop.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
 }
 
 .intro h1 a img {
@@ -103,6 +109,11 @@ strong {
     opacity: 25%;
 }
 
+.crew-content-box {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .title {
     font-family: var(--Bellefair);
     color: var(--active);
@@ -155,12 +166,6 @@ strong {
     height: 15px;
     background-color: var(--active);
     border-radius: 7.5px;
-}
-
-.crew-content-img {
-    position: absolute;
-    right: 137px;
-    bottom: 124px;
 }
 
 @media screen and (max-width: 768px) {

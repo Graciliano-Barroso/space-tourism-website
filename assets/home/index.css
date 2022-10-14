@@ -221,7 +221,7 @@ button {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     body {
         width: auto;
         height: auto;
@@ -277,7 +277,7 @@ button {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     body {
         width: auto;
         height: auto;
@@ -376,7 +376,7 @@ button {
     }
 
     .info-intro {
-        margin: 48px 22px;
+        margin: 20px 22px;
     }
 
     h2 {

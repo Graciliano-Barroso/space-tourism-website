@@ -20,6 +20,8 @@
 
 body {
     width: auto;
+    height: auto;
+    padding: 0 auto;
     font-family: var(--Barlow-Condensed);
     background-image: url('./background-home-desktop.jpg');
     background-repeat: no-repeat;
@@ -36,6 +38,7 @@ header {
 }
 
 .intro-box {
+    height: 96px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +86,7 @@ header {
     letter-spacing: 2.7px;  
 }
 
-.intro a {
+.links-menu {
     padding-bottom: 37px;    
     text-decoration: none;
     color: var(--Text-main);
@@ -192,13 +195,9 @@ button {
 @media screen and (max-width: 1024px) {
     body {
         width: auto;
+        height: auto;
         background-size: cover;
         background-position: center center;
-    }
-
-    .intro-box img {
-        align-items: center;
-        margin-top: 40px;
     }
 
     .line {
@@ -211,8 +210,9 @@ button {
         align-items: flex-start;
     }
 
-    a {
+    .logo {
         display: flex;
+        align-items: center;
     }
 
     .line {
@@ -224,6 +224,7 @@ button {
 @media screen and (max-width: 768px) {
     body {
         width: auto;
+        height: auto;
         background-image: url(./background-home-tablet.jpg);
         background-size: cover;
         background-position: center center;
@@ -231,6 +232,7 @@ button {
 
     .intro h1 a img {
         margin-left: 39px;
+        margin-top: 0;
     }
 
     .line {
@@ -252,7 +254,6 @@ button {
     }
 
     nav {
-        position: fixed;
         right: 48px;
     }
 
@@ -260,7 +261,7 @@ button {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 106px 48px 0 0;
+        margin: 106px 0;
         padding: 0;
         align-items: center;
     }
@@ -269,17 +270,19 @@ button {
         width: 242px;
         height: 242px;        
     }
+
+    .hover-button:hover {
+        background-color: inherit;
+        backdrop-filter: blur(1px);
+    }
 }
 
 @media screen and (max-width: 375px) {
     body {
         width: auto;
+        height: auto;
         background-image: url(./background-home-mobile.jpg);
-    }    
-    
-    .intro-box {
-        margin-top: 24px;
-    }
+    } 
 
     .intro h1 a img {
         margin-left: 15px;
@@ -340,7 +343,7 @@ button {
         margin-right: 11px;
     }
 
-    .menu-lateral {               
+    .side-menu {               
         position: absolute;
         top: 0;
         right: -254px;
@@ -348,7 +351,7 @@ button {
         transition: 1s;
     }
 
-    .menu-lateral-ativo {
+    .side-menu-ativo {
         right: 0;
         transition: 1s;
     }
@@ -364,7 +367,7 @@ button {
         align-self: flex-start;
     }
 
-    .intro a {
+    .side-menu a {
         padding-bottom: 0;
     }
 

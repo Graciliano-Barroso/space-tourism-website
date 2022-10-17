@@ -1,0 +1,421 @@
+:root {
+    /* action colors */
+
+    --Idle: #0B0D17;
+    --Hover: #D0D6F9;
+    --active: #ffffff;
+
+    /* text colors */
+
+    --Text-main: #ffffff;
+    --Idle: #0B0D17;
+    --Hover: #D0D6F9;
+
+    /* Fonts */
+
+    --Barlow-Condensed: 'Barlow Condensed', sans-serif;
+    --Barlow: 'Barlow', sans-serif;
+    --Bellefair: 'Bellefair', serif;
+}
+
+body {
+    font-family: var(--Barlow-Condensed);
+    color: var(--Text-main);
+    background-image: url(./background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.intro h1 a img {
+    margin-left: 55px;
+}
+
+.intro h1 a:hover {
+    border: none;
+}
+
+.line {
+    display: flex;
+    position: relative;
+    left: 50px;
+    background: var(--Hover);
+    z-index: 1;
+}
+
+.intro nav {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px); 
+}
+
+.intro ul {
+    width: auto;
+    display: flex;   
+    align-items: center;
+    margin: 0 117px 0 123px;
+    padding: 0 auto 0 auto;
+}
+
+.intro li {
+    height: 22px;
+    padding: 37px 0;
+    margin-right: 48px;  
+    list-style: none;  
+    text-transform: uppercase;  
+    letter-spacing: 2.7px;  
+}
+
+.intro a {
+    display: flex;
+}
+
+.links-menu {
+    padding-bottom: 37px;    
+    text-decoration: none;
+    color: var(--Text-main);
+}
+
+.button-destination {
+    color: var(--Hover);
+    border-bottom: 3px solid var(--Hover);
+}
+
+.intro a:hover {
+    color: var(--Hover);
+    border-bottom: 3px solid var(--Hover);
+}
+
+.cotent-technology {
+    margin-top: 76px;
+}
+
+strong {
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+strong {
+    opacity: 25%;
+}
+
+.container-technology {
+    display: grid;
+    grid-template-columns: 80px 472px 515px;
+    column-gap: 51px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+.technologies {
+    font-family: var(--Bellefair);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: center; 
+}
+
+.opitions {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.opitions-active {
+    background-color: var(--active);
+    color: var(--Idle);
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    color: var(--Hover);
+}
+
+h4 {
+    font-family: var(--Bellefair);
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    margin-top: 11px;
+}
+
+p {
+    font-family: var(--Barlow);
+    width: 472px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 17px;
+    line-height: 32px;
+}
+
+.container-technology img {
+    width: 515px;
+    height: 527px;
+}
+
+.img-tablet {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("./background-technology-tablet.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .intro h1 a img {
+        margin-left: 39px;
+        margin-top: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .intro-box {
+        margin-top: 0;
+    }
+
+    strong {
+        display: none;
+    }
+
+    .intro ul {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 48px;
+    }
+
+    nav {
+        right: 48px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .cotent-technology {
+        margin-top: 40px;
+    }
+
+    .cotent-technology strong {
+        display: inline-block;
+        margin-left: 38.5px;
+    }
+
+    .img-tablet {
+        width: 772px;
+        display: flex;
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+
+    .container-technology {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .technologies {
+        display: flex;
+        margin-top: 20px;
+    }    
+
+    .opitions-active {
+        background-color: var(--active);
+        color: var(--Idle);
+    }
+
+    h3 {
+        margin-top: 44px;
+    }
+
+    h4 {
+        font-size: 40px;
+        margin-top: 16px;
+    }
+
+    p {
+        width: 500px;
+    }
+
+    .text-technology {
+        width: 476px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("./background-technology-mobile.jpg");
+    }
+
+    header {
+        margin-top: 24px;
+    }
+
+    .intro h1 a img {
+        margin-left: 15px;
+        width: 40px;
+    }
+
+    .line {
+        width: 1px;
+        border: none;
+    }
+
+    #toggle {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        background-color: var(--Very-Light-Gray);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        z-index: 1;
+        margin-right: 15px;
+    }    
+
+    #toggle::before {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: var(--active);
+        transition: 0.5s;
+        transform: translatey(-8px);
+        box-shadow: 0 8px 0 var(--active);
+    }
+
+    #toggle.active::before {
+        transform: translatey(0px) rotate(45deg);
+        box-shadow: 0 0 0 var(--active);
+    }
+
+    #toggle::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background: var(--active);
+        transition: 0.5s;
+        transform: translatey(8px);
+    }
+
+    #toggle.active::after {
+        transform: translatey(0px) rotate(-45deg);
+    }
+
+    strong {
+        display: inline;
+        margin-right: 11px;
+    }
+
+    .side-menu {               
+        position: absolute;
+        top: 0;
+        right: -254px;
+        width: 254px;
+        transition: 1s;
+    }
+
+    .side-menu-ativo {
+        right: 0;
+        transition: 1s;
+    }
+
+    .intro ul {
+        margin-top: 118px;
+        margin-bottom: 334px;
+        flex-direction: column;
+    }
+
+    .intro li {
+        padding: 16px 0;
+        align-self: flex-start;
+    }
+
+    .side-menu a {
+        padding-bottom: 0;
+    }
+
+    .cotent-technology {
+        margin-top: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-align: center;
+    }    
+
+    .img-tablet {
+        width: 375px;
+        margin-top: 30px;
+    }
+
+    .container-technology {        
+        margin-top: 10px;
+    }
+
+    .opitions {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .opitions-active {
+        background-color: var(--active);
+        color: var(--Idle);
+    }
+
+    .text-technology {
+        width: 375px;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        width: 375px;
+        font-size: 15px;
+    }
+
+}

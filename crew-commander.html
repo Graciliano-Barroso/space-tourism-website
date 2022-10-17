@@ -18,18 +18,17 @@
   <title>Crew - Commander</title>
 </head>
 <body>
-
   <header class="intro">
     <div class="intro-box menu-hamburger">
       <h1><a href="./index.html"><img src="./assets/home/logo-desktop.svg" alt="Intro page logo"></a></h1>
       <div class="line"></div>      
       <div id="toggle"></div>
-      <nav class="menu-lateral">
+      <nav class="side-menu">
         <ul>
-          <li><a class="home-paage" href="./index.html"><strong>00 </strong>Home</a></li>
-          <li><a href="./destination-moon.html"><strong>01 </strong>Destination</a></li>
-          <li><a class="button-destination" href="./crew-commander.html"><strong>02 </strong>Crew</a></li>
-          <li><a href="#03 Technology"><strong>03 </strong>Technology</a></li>
+          <li><a class="links-menu" class="home-page" href="./index.html"><strong>00 </strong>Home</a></li>
+          <li><a class="links-menu" href="./destination-moon.html"><strong>01 </strong>Destination</a></li>
+          <li><a class="links-menu button-destination" href="./crew-commander.html"><strong>02 </strong>Crew</a></li>
+          <li><a class="links-menu" href="./technology-vehicle.html"><strong>03 </strong>Technology</a></li>
         </ul>
       </nav>
     </div>
@@ -40,6 +39,16 @@
       <div class="crew-content-box">
         <div>
           <h2><strong>02 </strong>Meet your crew</h2>
+          <div class="container-img">
+            <img class="img-commader-mobile" src="./assets/crew/image-douglas-mobile.png" alt="Commander's photo">
+            <img class="line-mobile" src="./assets/home/Rectangle.svg" alt="Line before navigation bar">
+          </div>
+          <div class="crew-content-bol-mobile">
+            <div class="bol-active"><a href="./crew-commander.html"></a></div>
+            <div class="bol"><a href="./crew-specialist.html"></a></div>
+            <div class="bol"><a href="./crew-pilot.html"></a></div>
+            <div class="bol"><a href="./crew-engineer.html"></a></div>
+          </div>
           <p class="title">Commander</p>
           <p class="name">Douglas Hurley</p>
           <p class="text">
@@ -49,14 +58,17 @@
             Crew Dragon Demo-2.
           </p>
           <div class="crew-content-bol">
-            <div class="bol-active"><a href="./crew-commander.html"></a></div>
-            <div class="bol"><a href="./crew-specialist.html"></a></div>
-            <div class="bol"><a href="./crew-pilot.html"></a></div>
-            <div class="bol"><a href="./crew-engineer.html"></a></div>
+            <a href="./crew-commander.html"><div class="bol-active"></div></a>
+            <a href="./crew-specialist.html"><div class="bol"></div></a>
+            <a href="./crew-pilot.html"><div class="bol"></div></a>
+            <a href="./crew-engineer.html"><div class="bol"></div></a>
           </div>
         </div>
         <div>        
-          <img class="crew-content-img" src="./assets/crew/image-douglas-hurley.png" alt="Image of commander">
+          <img class="crew-content-img 
+                      crew-content-img-specialist 
+                      crew-content-img-pilot 
+                      crew-content-img-engineer" src="./assets/crew/image-douglas-hurley.png" alt="Image of commander">
         </div>
       </div>
     </section>

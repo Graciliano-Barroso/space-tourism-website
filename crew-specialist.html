@@ -3,25 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="./assets/crew/crew.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Crew - Specialist</title>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <header class="intro">
+    <div class="intro-box menu-hamburger">
+      <h1><a href="./index.html"><img src="./assets/home/logo-desktop.svg" alt="Intro page logo"></a></h1>
+      <div class="line"></div>      
+      <div id="toggle"></div>
+      <nav class="side-menu">
+        <ul>
+          <li><a class="home-paage" href="./index.html"><strong>00 </strong>Home</a></li>
+          <li><a href="./destination-moon.html"><strong>01 </strong>Destination</a></li>
+          <li><a class="button-destination" href="./crew-commander.html"><strong>02 </strong>Crew</a></li>
+          <li><a href="#03 Technology"><strong>03 </strong>Technology</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  02 Meet your crew
+  <main>
+    <section class="crew-content">
+      <div class="crew-content-box">
+        <div>
+          <h2><strong>02 </strong>Meet your crew</h2>
+          <div class="container-img">
+            <img class="img-commader-mobile" src="./assets/crew/image-specialist-mobile.png" alt="Commander's photo">
+            <img class="line-mobile" src="./assets/home/Rectangle.svg" alt="Line before navigation bar">
+          </div>
+          <div class="crew-content-bol-mobile">
+            <a href="./crew-commander.html"><div class="bol"></div></a>
+            <a href="./crew-specialist.html"><div class="bol-active"></div></a>
+            <a href="./crew-pilot.html"><div class="bol"></div></a>
+            <a href="./crew-engineer.html"><div class="bol"></div></a>
+          </div>
+          <p class="title">Mission Specialist</p>
+          <p class="name">Mark Shuttleworth</p>
+          <p class="text">
+            Mark Richard Shuttleworth is the founder and CEO of<br>
+            Canonical, the company behind the Linux-based Ubuntu<br> 
+            operating system. Shuttleworth became the first South<br> 
+            African to travel to space as a space tourist.
+          </p>
+          <div class="crew-content-bol">
+            <a href="./crew-commander.html"><div class="bol"></div></a>
+            <a href="./crew-specialist.html"><div class="bol-active"></div></a>
+            <a href="./crew-pilot.html"><div class="bol"></div></a>
+            <a href="./crew-engineer.html"><div class="bol"></div></a>
+          </div>
+        </div>
+        <div>        
+          <img class="crew-content-img 
+                      crew-content-img-specialist 
+                      crew-content-img-pilot 
+                      crew-content-img-engineer" 
+                      src="./assets/crew/image-mark-shuttleworth.png" alt="Image of commander">
+        </div>
+      </div>
+    </section>
+  </main>  
+  <script src="./assets/home/index.js"></script>  
 
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
+   
+  
 </body>
 </html>

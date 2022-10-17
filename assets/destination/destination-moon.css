@@ -368,7 +368,7 @@ h3 {
         margin-right: 11px;
     }
 
-    .menu-lateral {               
+    .side-menu {               
         position: absolute;
         top: 0;
         right: -254px;
@@ -376,7 +376,7 @@ h3 {
         transition: 1s;
     }
 
-    .menu-lateral-ativo {
+    .side-menu-ativo {
         right: 0;
         transition: 1s;
     }

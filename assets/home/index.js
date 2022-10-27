@@ -1,7 +1,6 @@
 
 let toggle = document.getElementById('toggle');
-let buttonMenu = document.querySelector(".menu-hamburger");
-let sideMenu = document.querySelector(".side-menu");
+let buttonMenu = document.querySelector("#toggle");
 
 
 toggle.onclick = function(){
@@ -9,5 +8,6 @@ toggle.onclick = function(){
 }
 
 buttonMenu.addEventListener('click', ()=> {
+    let sideMenu = document.querySelector(".side-menu");
     sideMenu.classList.toggle('side-menu-ativo');
 });

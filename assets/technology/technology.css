@@ -332,11 +332,12 @@ p {
 
     #toggle.active::after {
         transform: translatey(0px) rotate(-45deg);
-    }
+    }    
 
-    strong {
+    .cotent-technology strong {
         display: inline;
         margin-right: 11px;
+        margin-left: 0;
     }
 
     .side-menu {               
@@ -374,6 +375,7 @@ p {
     h2 {
         font-size: 16px;
         text-align: center;
+        margin-left: 0;
     }    
 
     .img-tablet {
